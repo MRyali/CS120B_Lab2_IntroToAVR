@@ -30,7 +30,7 @@ int main(void) {
 	else {
 		tempB = (tempB & 0x00 ) | 0x00; //write PB0 to 0 if false
 	}
-	P0RTB = tempB; //set output
+	PORTB = tempB; //set output
     }
     return 1;
 }
