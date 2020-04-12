@@ -23,12 +23,12 @@ int main(void) {
 	unsigned char tempB = 0x00; //temp val for A
     /* Insert your solution below */
     while (1) {
-	tempA = PINA & 0x02;
+	tempA = PINA & 0x03;
 	if (tempA == 0x01) { //check if PA1 is 0 and PA0 is 1
-		tempB = (tempB & 0x00) | 0x01; //write PB0 to 1 if true
+		tempB = (tempB & 0xFC) | 0x01; //write PB0 to 1 if true
 	}
 	else {
-		tempB = (tempB & 0x00 ) | 0x00; //write PB0 to 0 if false
+		tempB = (tempB & 0xFC) | 0x00; //write PB0 to 0 if false
 	}
 	PORTB = tempB; //set output
     }
