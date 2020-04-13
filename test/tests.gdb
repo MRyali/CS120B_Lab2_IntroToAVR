@@ -45,7 +45,7 @@ setPINA 0x45 #69
 setPINB 0xA9 #169
 setPINC 0xAA #170
 continue 5
-expectPORTD 0x99
+expectPORTD 0x9B
 checkResult
 
 test "PINA: 0x075, PINB: 0x48, PINC: 0xFB => PORTC: 3"

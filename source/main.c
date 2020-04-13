@@ -43,8 +43,8 @@ int main(void) {
 	if (weightTotal > 140) { //check if total wight exceeds 140
 		tempD = tempD | 0x01;	
 	}
-	if (tempA - tempC > 80 || tempA - tempC < -80) { //check if the difference between A and C is greater than 80
-		tempD = tempD | 0x00;
+	if ((tempA - tempC > 80) || (tempA - tempC < -80)) { //check if the difference between A and C is greater than 80
+		tempD = tempD | 0x02;
 	}
 
 	weightTotal = weightTotal & 0xFC; //keeps the first 6 digits the same and the last two clear
