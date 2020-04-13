@@ -40,7 +40,7 @@ int main(void) {
 
 	weightTotal = tempA + tempB + tempC;
 
-	if (weightTotal >= 140) { //check if total wight exceeds 140
+	if (weightTotal > 140) { //check if total wight exceeds 140
 		tempD = tempD | 0x01;	
 	}
 	if (tempA - tempC > 80 || tempA - tempC < -80) { //check if the difference between A and C is greater than 80
