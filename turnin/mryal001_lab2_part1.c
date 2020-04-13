@@ -19,8 +19,8 @@ int main(void) {
 	DDRB = 0xFF; //configure ports B's 8 pins as outputs
 	PORTB = 0x00;
 
-	unsigned char tempA = 0x00; //temp value for B
-	unsigned char tempB = 0x00; //temp val for A
+	unsigned char tempA = 0x00; //temp value for A
+	unsigned char tempB = 0x00; //temp val for B
     /* Insert your solution below */
     while (1) {
 	tempA = PINA & 0x03;
