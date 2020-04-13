@@ -14,7 +14,10 @@ const struct avr_mmcu_vcd_trace_t _mytrace[] _MMCU_ = {
     {AVR_MCU_VCD_SYMBOL("PINA1"), .mask = 1 << 0,.what = (void*)&PINA,},
     { AVR_MCU_VCD_SYMBOL("PORTB"), .what = (void*)&PORTB, } , //output port
     {AVR_MCU_VCD_SYMBOL("PORTC"), .what = (void*)&PORTC,} ,
+    {AVR_MCU_VCD_SYMBOL("PORTD"), .what = (void*)&PORTD,} ,
     {AVR_MCU_VCD_SYMBOL("PINA"), .what = (void*)&PINA, } ,
+    {AVR_MCU_VCD_SYMBOL("PINB"), .what = (void*)&PINB, } ,
+    {AVR_MCU_VCD_SYMBOL("PINC"), .what = (void*)&PINC, } ,
 };
 
 /* Function to output through UART */
